@@ -1,4 +1,3 @@
-'use client'
 import Image from 'next/image'
 import { useState } from 'react'
 import React from 'react'
@@ -47,9 +46,7 @@ const initialReviews = [
   },
 ]
 
-const defaultProfileImage = 'https://via.placeholder.com/50'
-
-const DetailReview = ({ review }) => {
+const DetailReview = ({ review, accommodationId }) => {
   const [reviews, setReviews] = useState(review)
   const [newComment, setNewComment] = useState('')
   const [newRating, setNewRating] = useState(5)
@@ -71,7 +68,7 @@ const DetailReview = ({ review }) => {
 
     const reviewPayload = {
       accommodation: {
-        accommodationId: 1,
+        accommodationId: Number(accommodationId),
       },
       member: {
         userId: 1, // 실제 사용자 ID로 변경 필요

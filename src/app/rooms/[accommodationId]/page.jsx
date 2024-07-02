@@ -121,7 +121,7 @@ const AccommodationDetailPage = () => {
             <DetailHostProfile hosts={hosts} />
           </div>
           <hr />
-          <DetailReview review={reviews} />
+          <DetailReview review={reviews} accommodationId={accommodationId} />
           <hr />
           <DetailAccommodationInfo desc={desc} accommodationId={accommodationId} />
         </div>
