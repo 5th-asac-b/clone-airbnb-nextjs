@@ -86,8 +86,8 @@ function FooterComponent() {
   const activeTabItems = tabs.find((tab) => tab.key === activeTab)?.items || []
 
   return (
-    <footer className='bg-gray-100 main-padding-list'>
-      <div className='container py-10 '>
+    <>
+      <div className='container py-10'>
         <div className='mb-8'>
           <h5 className='text-xl font-bold mb-4'>다음 여행을 위한 추천 여행지</h5>
           <div className='flex space-x-4 mb-4 border-b border-gray-300'>
@@ -238,7 +238,7 @@ function FooterComponent() {
           </div>
         </div>
       </div>
-    </footer>
+    </>
   )
 }
 

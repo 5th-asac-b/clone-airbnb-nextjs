@@ -8,8 +8,10 @@ const RootLayout = ({ children }) => {
     <>
       <DynamicHeader />
       <main className={'relative'}>{children}</main>
-      <footer className='bg-gray-100 main-padding-detail'>
-        <FooterComponent />
+      <footer className='bg-gray-100 main-padding-detail flex justify-center'>
+        <div className='container w-full xl:w-[1120px]'>
+          <FooterComponent />
+        </div>
       </footer>
     </>
   )

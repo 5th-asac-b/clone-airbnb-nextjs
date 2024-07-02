@@ -126,12 +126,6 @@ const AccommodationDetailPage = () => {
           <DetailAccommodationInfo desc={desc} accommodationId={accommodationId} />
         </div>
       </div>
-
-      <footer className='bg-gray-100 main-padding-detail flex justify-center'>
-        <div className='container py-10 w-full xl:w-[1120px]'>
-          <FooterComponent />
-        </div>
-      </footer>
     </>
   )
 }
